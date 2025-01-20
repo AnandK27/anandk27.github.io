@@ -1,10 +1,10 @@
-<!-- ---
+---
 layout: page
-title: project 9
-description: another project with an image 🎉
-img: assets/img/6.jpg
-importance: 4
-category: fun
+title: RobThePupper, Remote Cooperation with Robots
+description: another without an image
+img:
+importance: 3
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
@@ -77,4 +77,4 @@ Here's the code for the last row of images above:
 </div>
 ```
 
-{% endraw %} -->
+{% endraw %}
