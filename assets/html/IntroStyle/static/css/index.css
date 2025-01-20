@@ -17,6 +17,11 @@ body {
   font-variant: small-caps;
 }
 
+.texttt{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
 
 .teaser .hero-body {
   padding-top: 0;
@@ -134,8 +139,9 @@ body {
 }
 
 .interpolation-panel .interpolation-image {
-  width: 100%;
-  border-radius: 5px;
+  width: 1000px;
+  /* width: 100%; */
+  /* border-radius: 5px; */
 }
 
 .interpolation-video-column {

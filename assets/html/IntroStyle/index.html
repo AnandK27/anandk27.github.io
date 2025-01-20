@@ -166,14 +166,15 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
-      </video>
+      </video> -->
+      <img src="./static/images/teaser.png" alt="IntroStyle teaser image." id="teaser" height="100%"/>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <span class="texttt">IntroStyle</span> a metric for style measurement.
+        Top two rows are retreival results with <span style="color: green;">green</span> colors for correct and <span style="color: rgba(222, 72, 72, 0.84);">red</span> for incorrect retrievals.
+        The bottom row shows ranking with lower score for images further away in style from the reference in the first column. 
       </h2>
     </div>
   </div>
@@ -182,56 +183,33 @@
 
 <section class="hero is-light is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title has-text-centered is-3">Retrieval Results</h3>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-1">
+          <img src="./static/images/car_1.png" id="item-1"
+               class="interpolation-image"/>
         </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-1">
+          <img src="./static/images/car_2.png" id="item-1"
+                class="interpolation-image"/>
         </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-1">
+          <img src="./static/images/car_3.png" id="item-1"
+               class="interpolation-image"/>
         </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-1">
+          <img src="./static/images/car_4.png" id="item-1"
+               class="interpolation-image"/>
         </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="item item-1">
+          <img src="./static/images/car_5.png" id="item-1"
+               class="interpolation-image"/>
         </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
+        
+      </div>
+      <div class="content has-text-centered">
+        The first left column is the query image with remaining columns showing retreival results with <span style="color: green;">green</span> colors for correct and <span style="color: rgba(222, 72, 72, 0.84);">red</span> for incorrect retrievals.
       </div>
     </div>
   </div>
@@ -258,7 +236,9 @@
               Moreover, it may not adequately address the dynamic nature of artistic styles and the rapidly evolving landscape of digital art. 
           </p>
           <p>
-            We present a novel, training-free framework to solve the style attribution problem, using the features produced by a diffusion model alone, without any external modules or retraining. This is denoted as introspective style attribution (IntroStyle) and demonstrates superior performance to state-of-the-art models for style retrieval. We also introduce a synthetic dataset of Style Hacks (SHacks) to isolate artistic style and evaluate fine-grained style attribution performance.
+            We present a novel, training-free framework to solve the style attribution problem, using the features produced by a diffusion model alone, without any external modules or retraining.
+             This is denoted as introspective style attribution (<span class="texttt">IntroStyle</span>) and demonstrates superior performance to state-of-the-art models for style retrieval.
+              We also introduce a synthetic dataset of Style Hacks (<span class="texttt">SHacks</span>) to isolate artistic style and evaluate fine-grained style attribution performance.
           </p>
           <!-- <p>
             We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
@@ -276,28 +256,74 @@
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
-  </div>
 </section>
+
+
+
 
 
 <section class="section">
   <div class="container is-max-desktop">
+    
+    <!-- Paper video. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Approach</h2>
+        <div class="publication-video">
+          <div class="content has-text-justified">
+            Our IntroStyle approach leverages a pre-trained diffusion model for extracting style features. We encode the input image into a latent vector using the diffusion model's encoder, noise this latent to a specific timestep t, and pass the noised latent through the denoising network with a null text embedding. We then extract a feature tensor from an intermediate layer of the network, specifically from an up-block. We compute the channel-wise mean μ<sub>c</sub> and variance σ<sub>c</sub><sup>2</sup> for each channel c of this feature tensor. These statistics form our IntroStyle feature representation: f<sup>t,idx</sup>(I) = (μ<sub>1</sub>, ..., μ<sub>C</sub>, σ<sub>1</sub><sup>2</sup>, ..., σ<sub>C</sub><sup>2</sup>)<sup>T</sup>. To compare styles between images, we use the 2-Wasserstein distance between their IntroStyle representations. This simple approach proves remarkably effective for style attribution tasks.
+            <br>
+          </div>
+            <img src="./static/images/architecture.png"
+               alt="IntroStyle architecture image." height="100%"/>
+          <!-- <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                  <div class="content has-text-centered">
+                  <span class="texttt">IntroStyle</span> computation of style similarity: channel-wise mean µ and variance σ<sup>2</sup> are computed for the identified style layers. Then a distance metric, 2-Wassertein Distance, can be used to measure styles between a pair of images.
+                </div>
+                </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
 
     <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Style Hacks (<span class="texttt">SHacks</span>) Dataset</h2>
+        <div class="content has-text-justified">
+          To create our Style Hacks (SHacks) dataset, we curated a collection of prompt-image pairs representing 25 influential artists from the LAION Aesthetics Dataset. We selected each artist's seminal works as reference queries and implemented a systematic prompt-generation strategy. For each original prompt, we derived three variants of two distinct prompt types: "hacked" and "innocent". We used ChatGPT to generate these prompts, employing specific templates to ensure consistency. For "hacked" prompts, we asked ChatGPT to describe the painting without mentioning the artist or artwork name, focusing on distinctive elements and style. For "innocent" prompts, we instructed ChatGPT to simplify the "hacked" prompts by removing style descriptors and keeping only the semantic content. We then used Stable Diffusion v2.1 to synthesize 12 images per prompt, resulting in a diverse reference dataset of 1,800 images. This approach allowed us to isolate stylistic elements effectively, enabling a fine-grained evaluation of style attribution performance.
+        </div>
+        <img src="./static/images/shacks.png"
+             alt="SHacks dataset image." height="100%"/>
+          <div class="content has-text-centered">
+             Style Hacks (<span class="texttt">SHacks</span>) dataset samples. Each row shows images generated for a reference image by an artist. Reference image, three images generated by “hacked” prompts, and three images generated by “innocent” prompts are shown from left to right.
+        
+        </div> 
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Comparision with state-of-the-art models</h2>
+        <div class="content has-text-justified">
+          We compare our retreival method with state-of-the-art models for style attribution. We also use the <span class="texttt">SHacks</span> dataset to evaluate the performance of our method against the baseline models. The results show that our method outperforms the baseline models in fine-grained style attribution tasks.
+        </div>
+        <img src="./static/images/wikiart_results.png"
+        alt="Retreival on Wikiart." height="100%"/>
+     <div class="content has-text-centered">
+        Wikiart retrieval results.
+   </div> 
+        <img src="./static/images/shacks_results.png"
+             alt="Retreival on SHacks." height="100%"/>
+          <div class="content has-text-centered">
+             Style Hacks (<span class="texttt">SHacks</span>) retrieval results.
+        </div> 
+      </div>
+    </div>
+
+    <!-- <div class="columns is-centered"> -->
 
       <!-- Visual Effects. -->
-      <div class="column">
+      <!-- <div class="column">
         <div class="content">
           <h2 class="title is-3">Visual Effects</h2>
           <p>
@@ -309,11 +335,11 @@
                     type="video/mp4">
           </video>
         </div>
-      </div>
+      </div> -->
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column">
+      <!-- <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
           <div class="column content">
@@ -329,16 +355,16 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Matting. -->
 
     <!-- Animation. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Animation</h2> -->
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <!-- <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
@@ -368,11 +394,11 @@
             <p class="is-bold">End Frame</p>
           </div>
         </div>
-        <br/>
+        <br/> -->
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
             Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
@@ -389,16 +415,16 @@
             <source src="./static/videos/replay.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
         <!--/ Re-rendering. -->
-
+<!-- 
       </div>
-    </div>
+    </div> -->
     <!--/ Animation. -->
 
 
     <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
@@ -421,7 +447,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Concurrent Work. -->
 
   </div>

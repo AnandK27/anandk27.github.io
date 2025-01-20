@@ -5,7 +5,7 @@ title: CV
 nav: true
 nav_order: 5
 cv_pdf: Anand_Resume.pdf # you can also use external links here
-description: My synopsis
-# toc:
-#   sidebar: left
+description: Curriculum Vitae
+toc:
+  beginning: true
 ---
