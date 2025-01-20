@@ -33,21 +33,21 @@ The variance sampling strategy reduces the number of views sampled by filtering 
 
 
 <div class="col-sm mt-3 mt-md-0">
-{% include video.liquid loading="eager" path="assets/img/baseline.mp4" title="example image" class="rounded z-depth-1" autoplay='true'%}
+{% include video.liquid loading="eager" path="assets/img/baseline.mp4" title="example image" class="rounded z-depth-1" autoplay='true' loop='true'%}
 </div>
 <div class="caption">
     Baseline Reconstruction using ZeroNVS
 </div>
 
 <div class="col-sm mt-3 mt-md-0">
-{% include video.liquid loading="eager" path="assets/img/SDS.mp4" title="example image" class="rounded z-depth-1" autoplay='true'%}
+{% include video.liquid loading="eager" path="assets/img/SDS.mp4" title="example image" class="rounded z-depth-1" autoplay='true' loop='true'%}
 </div>
 <div class="caption">
     Reconstruction using Scored Distillation Sampling
 </div>
 
 <div class="col-sm mt-3 mt-md-0">
-{% include video.liquid loading="eager" path="assets/img/sds_var_samp.mp4" title="example image" class="rounded z-depth-1" autoplay='true'%}
+{% include video.liquid loading="eager" path="assets/img/sds_var_samp.mp4" title="example image" class="rounded z-depth-1" autoplay='true' loop='true'%}
 </div>
 <div class="caption">
     Reconstruction using Variance Sampling Strategy
