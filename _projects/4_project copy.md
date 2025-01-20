@@ -1,8 +1,9 @@
 ---
 layout: page
 title:  Video Compression using VAE-GAN
-description: another without an image
-img:
+description: Hyperprior Contextual Video Compression (HyCoVC)
+img: assets/img/hycovc.jpg
+redirect: https://github.com/AnandK27/HyCoVC
 importance: 3
 category: work
 ---

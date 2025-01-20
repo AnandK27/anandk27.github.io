@@ -3,6 +3,7 @@ layout: page
 title: RobThePupper, Remote Cooperation with Robots
 description: another without an image
 img:
+redirect: https://drive.google.com/file/d/1qfcWQvqYhRiNgEQbAGuhmKt47hmPbtZ9/
 importance: 3
 category: work
 ---

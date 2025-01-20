@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Zero-GRIC-Graph Retriever for Zero-shot Image Captioning
-description: another without an image
-img:
+description: ECE 285 Visual Learning
+img: assets/img/gric.png
+redirect: https://drive.google.com/file/d/1qfcWQvqYhRiNgEQbAGuhmKt47hmPbtZ9
 importance: 3
 category: work
 ---

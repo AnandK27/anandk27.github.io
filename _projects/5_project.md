@@ -2,7 +2,8 @@
 layout: page
 title: Graphic Design Portfolio
 description: A collection of my graphic design projects.
-img: assets/img/1.jpg
+img: assets/img/portfolio.png
+redirect: https://drive.google.com/file/d/15d4WLSwWkxy0u4kB9WOgY2uAXEWuqY76/view?usp=sharing
 importance: 3
 category: fun
 ---
