@@ -18,14 +18,17 @@ category: work
 
 Github repo is available [here](https://github.com/AnandK27/CUDAOpticalFlow)
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/huYqKNw96ZA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin: auto;"></iframe>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/huYqKNw96ZA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
 
 <div class="caption">
     Results
 </div>
 
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wG-psnHYOsk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin: auto;"></iframe>
+</center>
 
 <div class="caption">
     Video going through our project.
