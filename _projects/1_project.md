@@ -5,7 +5,6 @@ description:  ECE 277- GPU Programming
 img: assets/img/cuda.png
 importance: 1
 category: work
-related_publications: true
 ---
 
 <ul>
