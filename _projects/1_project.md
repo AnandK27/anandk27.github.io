@@ -18,13 +18,13 @@ related_publications: true
 </ul>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=huYqKNw96ZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=huYqKNw96ZA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <div class="caption">
     Results
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wG-psnHYOsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=wG-psnHYOsk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <div class="caption">
     Video going through our project.

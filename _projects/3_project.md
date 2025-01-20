@@ -2,7 +2,7 @@
 layout: page
 title: Sparse-view 3D Reconstruction using Gaussian Splatting
 description: Variance Sampling Strategy for efficient reconstruction
-img: assets/img/preview.mp4
+img: assets/img/preview.gif
 importance: 3
 category: work
 ---

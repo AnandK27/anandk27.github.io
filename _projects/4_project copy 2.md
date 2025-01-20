@@ -1,9 +1,9 @@
 ---
 layout: page
 title: RobThePupper, Remote Cooperation with Robots
-description: another without an image
-img:
-redirect: https://drive.google.com/file/d/1qfcWQvqYhRiNgEQbAGuhmKt47hmPbtZ9/
+description: CSE 276B- Human Robot Interaction
+img: assets/img/rob.png
+redirect: https://drive.google.com/file/d/1ugqCpK4a8tPE6ezzBe0oD3nZ49MkTTvt/
 importance: 3
 category: work
 ---
