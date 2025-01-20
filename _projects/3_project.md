@@ -32,5 +32,31 @@ The variance sampling strategy reduces the number of views sampled by filtering 
 </div>
 
 
+<video width="100%" height="100%" controls>
+  <source src="assets/img/baseline.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="caption">
+    Baseline Reconstruction using ZeroNVS
+</div>
+
+<video width="100%" height="100%" controls>
+  <source src="assets/img/sds.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="caption">
+    Reconstruction using Scored Distillation Sampling
+</div>
+
+<video width="100%" height="100%" controls>
+  <source src="assets/img/sds_var_samp.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="caption">
+    Reconstruction using Variance Sampling Strategy
+</div>
+
+
+
 
 
