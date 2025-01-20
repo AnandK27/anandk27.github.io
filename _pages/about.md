@@ -17,6 +17,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 ---
+`Looking for full-time opportunities starting March 2025`
 
 I am a `Computer Vision researcher` at UC San Diego's Statistical Visual Computing Lab ([SVCL](http://www.svcl.ucsd.edu/)), where I work under Prof. Nuno's guidance to push the boundaries of generative AI and 3D reconstruction. My research focuses on developing innovative approaches using diffusion models, particularly in style attribution and sparse-view 3D reconstruction. Through my work on [IntroStyle](https://anandk27.github.io/assets/html/IntroStyle/) and [GS-TransUNet](https://spie.org/medical-imaging/presentation/GS---TransUNet--Integrated-Gaussian-splatting-and-transformer/13407-122), I've demonstrated a knack for developing novel solutions that advance the state-of-the-art in computer vision.
 
