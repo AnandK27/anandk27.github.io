@@ -406,7 +406,7 @@ ninja.data = [{
               window.location.href = "/projects/3_project/";
             },},{id: "projects-robthepupper-remote-cooperation-with-robots",
           title: 'RobThePupper, Remote Cooperation with Robots',
-          description: "another without an image",
+          description: "CSE 276B- Human Robot Interaction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project-copy-2/";
             },},{id: "projects-video-compression-using-vae-gan",
