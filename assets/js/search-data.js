@@ -334,89 +334,78 @@ ninja.data = [{
           window.location.href = "/blog/2020/twitter/";
         
       },
-    },{id: "post-a-post-with-disqus-comments",
+    },{id: "post-math",
       
-        title: "a post with disqus comments",
+        title: "Math",
       
-      description: "an example of a blog post with disqus comments",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/disqus-comments/";
-        
-      },
-    },{id: "post-a-post-with-math",
-      
-        title: "a post with math",
-      
-      description: "an example of a blog post with some math",
+      description: "",
       section: "Posts",
       handler: () => {
         
           window.location.href = "/blog/2015/math/";
         
       },
-    },{id: "post-a-post-with-code",
+    },{id: "post-disqus-comments",
       
-        title: "a post with code",
+        title: "Disqus Comments",
       
-      description: "an example of a blog post with some code",
+      description: "",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2015/disqus-comments/";
+        
+      },
+    },{id: "post-code",
+      
+        title: "Code",
+      
+      description: "",
       section: "Posts",
       handler: () => {
         
           window.location.href = "/blog/2015/code/";
         
       },
-    },{id: "post-a-post-with-images",
+    },{id: "post-images",
       
-        title: "a post with images",
+        title: "Images",
       
-      description: "this is what included images could look like",
+      description: "",
       section: "Posts",
       handler: () => {
         
           window.location.href = "/blog/2015/images/";
         
       },
-    },{id: "post-a-post-with-formatting-and-links",
+    },{id: "post-formatting-and-links",
       
-        title: "a post with formatting and links",
+        title: "Formatting And Links",
       
-      description: "march &amp; april, looking forward to summer",
+      description: "",
       section: "Posts",
       handler: () => {
         
           window.location.href = "/blog/2015/formatting-and-links/";
         
       },
-    },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
+    },{id: "projects-cuda-optical-flow",
+          title: 'CUDA Optical Flow',
           description: "with background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
+            },},{id: "projects-evaluating-effectiveness-of-chain-of-thought-prompting-for-small-models",
+          title: 'Evaluating Effectiveness of Chain-of-thought prompting for small models',
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
+            },},{id: "projects-sparse-view-3d-reconstruction-using-gaussian-splatting",
+          title: 'Sparse-view 3D Reconstruction using Gaussian Splatting',
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
+            },},{id: "projects-zero-gric-graph-retriever-for-zero-shot-image-captioning",
+          title: 'Zero-GRIC-Graph Retriever for Zero-shot Image Captioning',
           description: "another without an image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
