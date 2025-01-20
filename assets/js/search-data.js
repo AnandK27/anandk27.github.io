@@ -411,12 +411,12 @@ ninja.data = [{
               window.location.href = "/projects/4_project-copy-2/";
             },},{id: "projects-video-compression-using-vae-gan",
           title: 'Video Compression using VAE-GAN',
-          description: "another without an image",
+          description: "Hyperprior Contextual Video Compression (HyCoVC)",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project-copy/";
             },},{id: "projects-zero-gric-graph-retriever-for-zero-shot-image-captioning",
           title: 'Zero-GRIC-Graph Retriever for Zero-shot Image Captioning',
-          description: "another without an image",
+          description: "ECE 285 Visual Learning",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-graphic-design-portfolio",
