@@ -409,11 +409,6 @@ ninja.data = [{
           description: "CSE 276B- Human Robot Interaction",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project-copy-2/";
-            },},{id: "projects-video-compression-using-vae-gan",
-          title: 'Video Compression using VAE-GAN',
-          description: "Hyperprior Contextual Video Compression (HyCoVC)",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project-copy/";
             },},{id: "projects-zero-gric-graph-retriever-for-zero-shot-image-captioning",
           title: 'Zero-GRIC-Graph Retriever for Zero-shot Image Captioning',
           description: "ECE 285 Visual Learning",
@@ -424,6 +419,16 @@ ninja.data = [{
           description: "A collection of my graphic design projects.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
+            },},{id: "projects-video-compression-using-vae-gan",
+          title: 'Video Compression using VAE-GAN',
+          description: "Hyperprior Contextual Video Compression (HyCoVC)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_project/";
+            },},{id: "projects-clia-ai",
+          title: 'Clia.ai',
+          description: "Youtube Shorts Video Generator",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
             },},{
         id: 'social-email',
         title: 'email',
