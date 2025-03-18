@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Zero-GRIC-Graph Retriever for Zero-shot Image Captioning
-description: ECE 285 Visual Learning
-img: assets/img/gric.png
-redirect: https://drive.google.com/file/d/1qfcWQvqYhRiNgEQbAGuhmKt47hmPbtZ9
-importance: 5
+title:  Clia.ai
+description: Youtube Shorts Video Generator
+img: assets/img/cila.png
+redirect: https://cila.ai/
+importance: 6
 category: work
 ---
 
