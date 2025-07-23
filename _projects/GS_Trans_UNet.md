@@ -186,8 +186,7 @@ permalink: /GS_Trans_UNet/
                 type="video/mp4">
       </video> -->
       <embed src="{{ '/assets/html/GS_Trans_UNet/static/images/poster.pdf' | relative_url }}" width="100%" height="600px" type="application/pdf" id="teaser" style="border:none;">
-      <p>Your browser does not support PDFs. <a href="{{ '/assets/html/GS_Trans_UNet/static/images/poster.pdf' | relative_url }}">Download the PDF</a>.</p>
-      </embed>
+      <p><a href="{{ '/assets/html/GS_Trans_UNet/static/images/poster.pdf' | relative_url }}">Download the Poster</a>.</p>
 
     </div>
   </div>
