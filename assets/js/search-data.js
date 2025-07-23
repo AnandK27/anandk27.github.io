@@ -429,6 +429,11 @@ ninja.data = [{
           description: "Youtube Shorts Video Generator",
           section: "Projects",handler: () => {
               window.location.href = "/7-project/";
+            },},{id: "projects-gs-trans-unet",
+          title: 'Gs_trans_unet',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/GS_Trans_UNet/";
             },},{id: "projects-introstyle",
           title: 'Introstyle',
           description: "",
