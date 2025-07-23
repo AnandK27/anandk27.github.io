@@ -2,7 +2,6 @@
 layout: null
 permalink: /GS_Trans_UNet/
 ---
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
