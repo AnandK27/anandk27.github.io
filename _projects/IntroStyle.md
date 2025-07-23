@@ -2,7 +2,6 @@
 layout: null
 permalink: /IntroStyle/
 ---
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -56,7 +55,8 @@ permalink: /IntroStyle/
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">IntroStyle: Training-Free Introspective Style Attribution using Diffusion Features</h1>
+          <h1 class="title is-1 publication-title">IntroStyle </h1>
+          <h2 class="title is-2 publication-title">Training-Free Introspective Style Attribution using Diffusion Features</h2>
           <h3 class="title is-size-3 publication-venue">ICCV 2025</h3>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
