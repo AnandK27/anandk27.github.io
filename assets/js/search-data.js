@@ -393,42 +393,47 @@ ninja.data = [{
           title: 'CUDA Optical Flow',
           description: "ECE 277- GPU Programming",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/1-project/";
             },},{id: "projects-chain-of-thought-prompting-for-small-llms",
           title: 'Chain-of-thought prompting for small LLMs',
           description: "CSE 291- Advanced Data Mining",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/2-project/";
             },},{id: "projects-sparse-view-3d-reconstruction-using-gaussian-splatting",
           title: 'Sparse-view 3D Reconstruction using Gaussian Splatting',
           description: "Variance Sampling Strategy for efficient reconstruction",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/3-project/";
             },},{id: "projects-robthepupper-remote-cooperation-with-robots",
           title: 'RobThePupper, Remote Cooperation with Robots',
           description: "CSE 276B- Human Robot Interaction",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project-copy-2/";
+              window.location.href = "/4-project-copy-2/";
             },},{id: "projects-zero-gric-graph-retriever-for-zero-shot-image-captioning",
           title: 'Zero-GRIC-Graph Retriever for Zero-shot Image Captioning',
           description: "ECE 285 Visual Learning",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
+              window.location.href = "/4-project/";
             },},{id: "projects-graphic-design-portfolio",
           title: 'Graphic Design Portfolio',
           description: "A collection of my graphic design projects.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
+              window.location.href = "/5-project/";
             },},{id: "projects-video-compression-using-vae-gan",
           title: 'Video Compression using VAE-GAN',
           description: "Hyperprior Contextual Video Compression (HyCoVC)",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
+              window.location.href = "/6-project/";
             },},{id: "projects-clia-ai",
           title: 'Clia.ai',
           description: "Youtube Shorts Video Generator",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
+              window.location.href = "/7-project/";
+            },},{id: "projects-introstyle",
+          title: 'Introstyle',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/IntroStyle/";
             },},{
         id: 'social-email',
         title: 'email',
