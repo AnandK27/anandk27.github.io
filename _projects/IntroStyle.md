@@ -31,6 +31,7 @@ permalink: /IntroStyle/
 </head>
 <body>
 
+
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -46,17 +47,38 @@ permalink: /IntroStyle/
           <i class="fas fa-home"></i>
       </span>
       </a>
+
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://hypernerf.github.io">
+            HyperNeRF
+          </a>
+          <a class="navbar-item" href="https://nerfies.github.io">
+            Nerfies
+          </a>
+          <a class="navbar-item" href="https://latentfusion.github.io">
+            LatentFusion
+          </a>
+          <a class="navbar-item" href="https://photoshape.github.io">
+            PhotoShape
+          </a>
+        </div>
+      </div> -->
     </div>
+
   </div>
 </nav>
+
 
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">IntroStyle </h1>
-          <h2 class="title is-2 publication-title">Training-Free Introspective Style Attribution using Diffusion Features</h2>
+          <h1 class="title is-1 publication-title">IntroStyle: Training-Free Introspective Style Attribution using Diffusion Features</h1>
           <h3 class="title is-size-3 publication-venue">ICCV 2025</h3>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -74,8 +96,18 @@ permalink: /IntroStyle/
 
           <div class="column has-text-centered">
             <div class="publication-links">
+            <span class="link-block">
+                <a href="https://iccv.thecvf.com/virtual/2025/poster/2077"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-book-open"></i>
+                  </span>
+                  <span>ICCV</span>
+                </a>
+              </span>
+              <!-- PDF Link. -->
               <span class="link-block">
-                <a href="{{ '/assets/html/IntroStyle/static/paper.pdf' | relative_url }}"
+                <a href="{{ '/assets/html/IntroStyle/static/js/paper.pdf' | relative_url }}"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -92,6 +124,17 @@ permalink: /IntroStyle/
                   <span>arXiv</span>
                 </a>
               </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/AnandK27/IntroStyle"
                    class="external-link button is-normal is-rounded is-dark">
@@ -101,7 +144,18 @@ permalink: /IntroStyle/
                   <span>Code</span>
                   </a>
               </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+                </span> -->
             </div>
+
           </div>
         </div>
       </div>
@@ -112,6 +166,10 @@ permalink: /IntroStyle/
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video> -->
       <img src="{{ '/assets/html/IntroStyle/static/images/teaser.png' | relative_url }}" alt="IntroStyle teaser image." id="teaser" height="100%"/>
       <h2 class="subtitle has-text-centered">
         <span class="texttt">IntroStyle</span> a metric for style measurement.
@@ -121,6 +179,7 @@ permalink: /IntroStyle/
     </div>
   </div>
 </section>
+
 
 <section class="hero is-light is-small">
   <div class="hero-body">
@@ -143,10 +202,7 @@ permalink: /IntroStyle/
           <img src="{{ '/assets/html/IntroStyle/static/images/car_4.png' | relative_url }}" id="item-1"
                class="interpolation-image"/>
         </div>
-        <div class="item item-1">
-          <img src="{{ '/assets/html/IntroStyle/static/images/car_5.png' | relative_url }}" id="item-1"
-               class="interpolation-image"/>
-        </div>
+        
       </div>
       <div class="content has-text-centered">
         The first left column is the query image with remaining columns showing retreival results with <span style="color: green;">green</span> colors for correct and <span style="color: rgba(222, 72, 72, 0.84);">red</span> for incorrect retrievals.
@@ -155,53 +211,163 @@ permalink: /IntroStyle/
   </div>
 </section>
 
+
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
+          <!-- <p>
+            We present the first method capable of photorealistically reconstructing a non-rigidly
+            deforming scene using photos/videos captured casually from mobile phones.
+          </p> -->
           <p>
-          Text-to-image (T2I) models have gained widespread adoption among content creators and the general public. Gradually, there is an increasing demand for T2I models to incorporate mechanisms that prevent the generation of specific artistic styles, thereby safeguarding intellectual property rights. Existing methods for style extraction typically necessitate the collection of custom datasets and the training of specialized models. This, however, is resource-intensive, time-consuming, and often impractical for real-time applications. We present a novel, training-free framework to solve the style attribution problem, using the features produced by a diffusion model alone, without any external modules or retraining. 
+          Text-to-image (T2I) models have recently gained widespread adoption. This has spurred concerns about safeguarding intellectual property rights  and an increasing demand for mechanisms that prevent the generation of specific artistic styles. Existing methods for style extraction typically necessitate the collection of custom datasets and the training of specialized models. This, however, is resource-intensive, time-consuming, and often impractical for real-time applications.           <p>
+           We present a novel, training-free framework to solve the style attribution problem, using the features produced by a diffusion model alone, without any external modules or retraining. This is denoted as <b>Introspective Style attribution</b> (<span class="texttt">IntroStyle</span>) and is shown to have superior performance to state-of-the-art models for style attribution. We also introduce a synthetic dataset of <b>Artistic Style Split</b> (<span class="texttt">ArtSplit</span>) to isolate artistic style and evaluate fine-grained style attribution performance. Our experimental results on WikiArt and DomainNet datasets show that <span class="texttt">IntroStyle</span> is robust to the dynamic nature of artistic styles, outperforming existing methods by a wide margin.          </p>
           </p>
-          <p>
-            This is denoted as Introspective Style attribution (<span class="texttt">IntroStyle</span>) and is shown to have superior performance to state-of-the-art models for style attribution. We also introduce a synthetic dataset of Artistic Style Split (<span class="texttt">ArtSplit</span>) to isolate artistic style and evaluate fine-grained style attribution performance. Our experimental results show that our method adequately addresses the dynamic nature of artistic styles and the rapidly evolving landscape of digital art with no training overhead.
-          </p>
+          <!-- <p>
+            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
+            photos/videos into deformable NeRF
+            models that allow for photorealistic renderings of the subject from arbitrary
+            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
+            using a
+            rig with two mobile phones that take time-synchronized photos, yielding train/validation
+            images of the same pose at different viewpoints. We show that our method faithfully
+            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
+            fidelity.
+          </p> -->
         </div>
       </div>
     </div>
-  </div>
+    </div>
 </section>
+    <!--/ Abstract. -->
+
+
+
+
 
 <section class="section">
   <div class="container is-max-desktop">
+    
+    <!-- Paper video. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Approach</h2>
-        <div class="publication-video">
           <div class="content has-text-justified">
-            Our IntroStyle approach leverages a pre-trained diffusion model for extracting style features. We encode the input image into a latent vector using the diffusion model's encoder, noise this latent to a specific timestep t, and pass the noised latent through the denoising network with a null text embedding. We then extract a feature tensor from an intermediate layer of the network, specifically from an up-block. We compute the channel-wise mean μ<sub>c</sub> and variance σ<sub>c</sub><sup>2</sup> for each channel c of this feature tensor. These statistics form our IntroStyle feature representation: f<sup>t,idx</sup>(I) = (μ<sub>1</sub>, ..., μ<sub>C</sub>, σ<sub>1</sub><sup>2</sup>, ..., σ<sub>C</sub><sup>2</sup>)<sup>T</sup>. To compare styles between images, we use the 2-Wasserstein distance between their IntroStyle representations. This simple approach proves remarkably effective for style attribution tasks.
-            <br>
+<h3>What is IntroStyle?</h3>
+  <p>
+    IntroStyle is a method that helps AI understand and compare <strong>artistic styles</strong> of images. 
+    It does this by extracting special features (called "style features") from each image using a 
+    <strong>pre-trained diffusion model</strong> — a type of powerful image AI.
+  </p>
+
+  <h3>How does it work?</h3>
+  <p>Here's a breakdown:</p>
+  <ul>
+    <li>
+      First, the input image is converted into a compressed form called a <strong>latent vector</strong> using the model's encoder.
+    </li>
+    <li>
+      A bit of <strong>random noise</strong> is added to this latent vector — like shaking up the image slightly — at a certain time step <code>t</code>.
+    </li>
+    <li>
+      This noisy latent is then passed through the model's <strong>denoising network</strong>, but with no text prompt attached (so it's only focused on the image itself).
+    </li>
+    <li>
+      From a specific part of the network (an “up-block” layer), they pull out a tensor of features — think of it like a 3D grid that holds important information about the image's style.
+    </li>
+  </ul>
+
+  <h3>How is style represented?</h3>
+  <p>
+    From that tensor, they calculate two things for each channel (kind of like a color or feature layer):
+  </p>
+  <ul>
+    <li><strong>Mean (μ_c):</strong> The average value</li>
+    <li><strong>Variance (σ²_c):</strong> How much the values vary</li>
+  </ul>
+  <p>
+    These numbers together form the <strong>IntroStyle feature representation</strong> for that image. It's like a fingerprint of the image's style.
+  </p>
+
+  <h3>How are styles compared?</h3>
+  <p>
+    To see how similar two styles are, they use a special metric called the 
+    <strong>2-Wasserstein distance</strong> — which measures how different the style fingerprints are. 
+    The smaller the distance, the more similar the styles.
+  </p>
+
+  <h3>Why is this useful?</h3>
+  <p>
+    Despite being a simple method, IntroStyle works very well for tasks where the AI needs to identify or compare artistic styles between images.
+  </p>
           </div>
-          <img src="{{ '/assets/html/IntroStyle/static/images/architecture.png' | relative_url }}"
+            <img src="{{ '/assets/html/IntroStyle/static/images/architecture.png' | relative_url }}"
                alt="IntroStyle architecture image." height="100%"/>
-          <div class="content has-text-centered">
-            <span class="texttt">IntroStyle</span> computation of style similarity: channel-wise mean µ and variance σ<sup>2</sup> are computed for the identified style layers. Then a distance metric, 2-Wassertein Distance, can be used to measure styles between a pair of images.
-          </div>
-        </div>
+          <!-- <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                  <div class="content has-text-centered">
+                  <span class="texttt">IntroStyle</span> computation of style similarity: channel-wise mean µ and variance σ<sup>2</sup> are computed for the identified style layers. Then a distance metric, 2-Wassertein Distance, can be used to measure styles between a pair of images.
+                </div>
       </div>
     </div>
+    <!--/ Paper video. -->
 
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Artistic Style Split (<span class="texttt">ArtSplit</span>) Dataset</h2>
         <div class="content has-text-justified">
-          To address the limitations of existing datasets for fine-grained evaluation of style retrieval, we propose the Artistic Style Split (<span class="texttt">ArtSplit</span>) dataset. This was created with the prompt-image pairs of the 2 most recognized works of 50 prominent artists from the LAION Aesthetic Dataset. For each of the two paintings, ChatGPT-4o was asked to generate a "style" specification and a "semantic" description, such that there is no style information in the semantic description and vice-versa. Stable Diffusion v2.1 was then used with a combination of two prompts, "style" and "semantic," to synthesize a reference image dataset. With 50 artists and 100 paintings, this led to 50 X 100 = 5,000 prompt combinations. A set of 12 images was sampled per combination, yielding 60,000 images in total. The procedure is detailed in Supplemental Section 4.
+            <h3>The Problem</h3>
+  <p>
+    Current datasets aren't good enough for testing how well an AI can recognize and match <strong>artistic styles</strong>
+    (like the brushstroke or color technique of Van Gogh or Picasso). These datasets often mix up the <strong>content</strong> 
+    (what's shown) with the <strong>style</strong> (how it's shown), making it hard to evaluate style understanding properly.
+  </p>
+
+  <h3>Our Solution</h3>
+  <p>
+    We made a new dataset called <strong>ArtSplit</strong>. Here's how we built it:
+  </p>
+  <ul>
+    <li>
+      <strong>Start with famous artists:</strong> We selected <strong>50 well-known artists</strong> and chose
+      <strong>2 famous artworks</strong> from each, making a total of <strong>100 paintings</strong>.
+    </li>
+    <li>
+      <strong>Describe each painting two ways:</strong> For every painting, we asked ChatGPT-4o to generate:
+      <ul>
+        <li>A <strong>style description</strong> (e.g., "thick brushstrokes, bright swirling colors")</li>
+        <li>A <strong>semantic description</strong> (e.g., "a starry night sky over a village"), with no style information</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Generate new images:</strong> They used <strong>Stable Diffusion v2.1</strong> (an image generator) with the
+      style and semantic prompts combined to create new images.
+    </li>
+    <li>
+      <strong>Do this a lot:</strong>
+      <ul>
+        <li>50 artists x 100 prompt combinations = <strong>5,000 pairs</strong></li>
+        <li>For each pair, generate <strong>12 images</strong></li>
+        <li>Total = <strong>60,000 images</strong></li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>Why is this cool?</h3>
+  <p>
+    This new dataset helps researchers clearly test how well AI understands <strong>style</strong> (independent of content), 
+    because the style and content are deliberately kept separate in the prompts.
+  </p>
         </div>
         <img src="{{ '/assets/html/IntroStyle/static/images/artsplit_sample.png' | relative_url }}"
              alt="ArtSplit dataset image." height="100%"/>
-        <div class="content has-text-centered">
-           Artistic Style Split (<span class="texttt">ArtSplit</span>) Dataset samples. Each row shows images generated with the same style, and each column with the same semantics.
+          <div class="content has-text-centered">
+             Artistic Style Split (<span class="texttt">ArtSplit</span>) Dataset samples. Each row shows images generated with the same style, and each column with the same semantics.
+
         </div> 
       </div>
     </div>
@@ -213,40 +379,179 @@ permalink: /IntroStyle/
           We compare our retreival method with state-of-the-art models for style attribution. We also use the <span class="texttt">ArtSplit</span> dataset to evaluate the performance of our method against the baseline models. The results show that our method outperforms the baseline models in fine-grained style attribution tasks.
         </div>
         <img src="{{ '/assets/html/IntroStyle/static/images/wikiart_results.png' | relative_url }}"
-             alt="Retreival on Wikiart." height="100%"/>
-        <div class="content has-text-centered">
-           Wikiart retrieval results.
-        </div> 
+        alt="Retreival on Wikiart." height="100%"/>
+     <div class="content has-text-centered">
+        Wikiart retrieval results.
+   </div> 
         <img src="{{ '/assets/html/IntroStyle/static/images/style_artsplit.png' | relative_url }}"
              alt="Retreival on ArtSplit." height="100%"/>
-        <div class="content has-text-centered">
-           <b>Style-based</b> Artistic Style Split (<span class="texttt">ArtSplit</span>) retrieval results. We show the ranked images for a fixed semantic for isolating stylistic variations.
+          <div class="content has-text-centered">
+             <b>Style-based</b> Artistic Style Split (<span class="texttt">ArtSplit</span>) retrieval results. We show the ranked
+ images for a fixed semantic for isolating stylistic variations.
         </div>
         <img src="{{ '/assets/html/IntroStyle/static/images/semantic_artsplit.png' | relative_url }}"
              alt="Retreival on ArtSplit." height="100%"/>
-        <div class="content has-text-centered">
-           <b>Semantic-based</b> Artistic Style Split (<span class="texttt">ArtSplit</span>) retrieval results. The results suggest that our retrieval emphasizes styles rather than semantic content.
+          <div class="content has-text-centered">
+             <b>Semantic-based</b> Artistic Style Split (<span class="texttt">ArtSplit</span>) retrieval results. The results suggest
+ that our retrieval emphasizes styles rather than semantic content.
         </div>
       </div>
     </div>
+
+    <!-- <div class="columns is-centered"> -->
+
+      <!-- Visual Effects. -->
+      <!-- <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Visual Effects</h2>
+          <p>
+            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+            would be impossible without nerfies since it would require going through a wall.
+          </p>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dollyzoom-stacked.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div> -->
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <!-- <div class="column">
+        <h2 class="title is-3">Matting</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              As a byproduct of our method, we can also solve the matting problem by ignoring
+              samples that fall outside of a bounding box during rendering.
+            </p>
+            <video id="matting-video" controls playsinline height="100%">
+              <source src="./static/videos/matting.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+    <!--/ Matting. -->
+
+    <!-- Animation. -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Animation</h2> -->
+
+        <!-- Interpolating. -->
+        <!-- <h3 class="title is-4">Interpolating states</h3>
+        <div class="content has-text-justified">
+          <p>
+            We can also animate the scene by interpolating the deformation latent codes of two input
+            frames. Use the slider here to linearly interpolate between the left frame and the right
+            frame.
+          </p>
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_start.jpg"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <p>Start Frame</p>
+          </div>
+          <div class="column interpolation-video-column">
+            <div id="interpolation-image-wrapper">
+              Loading...
+            </div>
+            <input class="slider is-fullwidth is-large is-info"
+                   id="interpolation-slider"
+                   step="1" min="0" max="100" value="0" type="range">
+          </div>
+          <div class="column is-3 has-text-centered">
+            <img src="./static/images/interpolate_end.jpg"
+                 class="interpolation-image"
+                 alt="Interpolation end reference image."/>
+            <p class="is-bold">End Frame</p>
+          </div>
+        </div>
+        <br/> -->
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
+        <div class="content has-text-justified">
+          <p>
+            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
+            viewpoint such as a stabilized camera by playing back the training deformations.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                 controls
+                 muted
+                 preload
+                 playsinline
+                 width="75%">
+            <source src="./static/videos/replay.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
+        <!--/ Re-rendering. -->
+<!-- 
+      </div>
+    </div> -->
+    <!--/ Animation. -->
+
+
+    <!-- Concurrent Work. -->
+    <!-- <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Related Links</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            There's a lot of excellent work that was introduced around the same time as ours.
+          </p>
+          <p>
+            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+          </p>
+          <p>
+            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+            both use deformation fields to model non-rigid scenes.
+          </p>
+          <p>
+            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+          </p>
+          <p>
+            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Concurrent Work. -->
+
   </div>
 </section>
+
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{kumar2024introstyle,
+    <pre><code>@InProceedings{kumar2025introstyle,
   author    = {Kumar, Anand and Mu, Jiteng and Vasconcelos, Nuno},
   title     = {IntroStyle: Training-Free Introspective Style Attribution using Diffusion Features},
-  journal   = {arXiv preprint arXiv: 2412.14432},
-  year      = {2024},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year      = {2025},
 }</code></pre>
   </div>
 </section>
 
+
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
+      <!-- <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a> -->
       <a class="icon-link" href="https://github.com/AnandK27" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
