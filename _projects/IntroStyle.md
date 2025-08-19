@@ -107,7 +107,7 @@ permalink: /IntroStyle/
               </span>
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="{{ '/assets/html/IntroStyle/static/js/paper.pdf' | relative_url }}"
+                <a href="{{ '/assets/html/IntroStyle/static/paper.pdf' | relative_url }}"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
